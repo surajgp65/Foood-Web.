@@ -1,0 +1,286 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+
+/* Custom Css */
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 60px;
+    margin: auto;
+}
+
+
+/* Navbar Css */
+
+.navbar_ai {
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    background: transparent;
+    font-family: 'Ubuntu', 'sans-serif';
+    transition: all ease .5s;
+    z-index: 999;
+}
+
+.navbar_ai.sticky {
+    padding: 15px 0;
+    background: #000000cc;
+}
+
+.navbar_ai .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar_ai .logo {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar_ai .logo a {
+    color: white;
+}
+
+.navbar_ai .logo a span {
+    color: crimson;
+    transition: all 0.3s ease;
+}
+
+.navbar_ai.sticky .logo a {
+    color: white;
+}
+
+.navbar_ai.sticky .logo a span {
+    color: white;
+}
+
+.navbar_ai ul {
+    margin-bottom: 0px;
+}
+
+.navbar_ai .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar_ai .menu li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar_ai.sticky .menu li a {
+    color: white;
+}
+
+.navbar_ai .menu li a:hover {
+    /* color: crimson; */
+}
+
+.navbar_ai.sticky .menu li a:hover {
+    color: white;
+}
+
+.menu-btn {
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Navbar Css End */
+
+
+/* Hero Section */
+
+.hero {
+    object-fit: cover;
+    display: flex;
+    background: url(../img/annie-spratt-R3LcfTvcGWY-unsplash.jpg) no-repeat center;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    color: black;
+    min-height: 500px;
+    font-family: 'Ubuntu', 'sans-serif';
+    cursor: pointer;
+}
+
+.hero .container {
+    text-align: center;
+    place-self: center;
+    color: white;
+}
+
+.mid label {
+    font-size: 40px;
+    font-family: 'Birthstone', cursive;
+    background: -webkit-linear-gradient(#18a86b, #2fb383);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mid .bt {
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.mid p {
+    text-transform: uppercase;
+}
+
+.book,
+.vm {
+    border: 2px solid;
+    color: white;
+    margin: 0px 10px;
+    font-size: 20px;
+    padding: 6px 25px;
+    outline: none;
+    box-shadow: none;
+}
+
+.book:hover,
+.vm:hover {
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+
+.book:focus,
+.vm:focus {
+    box-shadow: none;
+}
+
+.fa-arrow-right {
+    font-size: 14px;
+}
+
+
+/* Hero End */
+
+
+/* About Css */
+
+section.About {
+    padding: 50px 0px;
+    background-image: url("/Assets/img/tom-morel-ktVazL5c7FM-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.midd {
+    text-align: center;
+}
+
+.midd .content {
+    margin: 20% 0px;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Birthstone', cursive;
+    background: -webkit-linear-gradient(#18a86b, #2fb383);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title-2 {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Birthstone', cursive;
+    background: -webkit-linear-gradient(#18a86b, #2fb383);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ab-img {
+    width: 80%;
+}
+
+
+/* About Css  End */
+
+
+/* Banquet Css */
+
+
+/* Banquet Css End */
+
+section.banquet {
+    background-image: url("/Assets/img/pexels-anna-guerrero-1956974.jpg");
+    background-repeat: no-repeat;
+}
+
+.box {
+    padding: 30px 0px;
+}
+
+.box-main {
+    margin: 50px auto;
+    color: white;
+    background: #202127;
+    padding: 3rem 2rem;
+}
+
+.Line {
+    padding: 4rem;
+    border: 2.5px solid white;
+}
+
+.Line p {
+    width: 50%;
+    min-width: 80px !important;
+    margin: auto;
+}
+
+
+/* Media Query */
+
+@media(max-width:947px) {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+    .navbar_ai .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: black;
+        text-align: center;
+        color: white;
+        padding-top: 60px;
+        transition: all 0.3s ease;
+    }
+    .navbar_ai .menu.active {
+        left: 0;
+    }
+    .navbar_ai .menu li {
+        display: block;
+    }
+    .navbar_ai .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+        color: white;
+    }
+    .navbar_ai .menu li a:hover,
+    .navbar_ai.sticky .menu li a:hover {
+        color: crimson;
+    }
+}
