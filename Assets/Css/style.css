@@ -218,7 +218,7 @@ section.About {
 /* Banquet Css End */
 
 section.banquet {
-    background-image: url("/Assets/img/pexels-anna-guerrero-1956974.jpg");
+    background-image: url(../img/pexels-anna-guerrero-1956974.jpg);
     background-repeat: no-repeat;
 }
 
