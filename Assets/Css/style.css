@@ -172,7 +172,7 @@
 
 section.About {
     padding: 50px 0px;
-    background-image: url("/Assets/img/tom-morel-ktVazL5c7FM-unsplash.jpg");
+    background-image: url(../img/tom-morel-ktVazL5c7FM-unsplash.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
