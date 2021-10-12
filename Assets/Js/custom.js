@@ -20,10 +20,10 @@ $(document).ready(function() {
 jQuery(document).ready(function($) {
     var alterClass = function() {
         var ww = document.body.clientWidth;
-        if (ww < 600) {
-            $('.navbar_ai').addClass('bg-dark');
-        } else if (ww >= 601) {
-            $('.navbar_ai').removeClass('bg-dark');
+        if (ww < 430) {
+            $('.navbar_ai').addClass('bg-black');
+        } else if (ww >= 431) {
+            $('.navbar_ai').removeClass('bg-black');
         };
     };
     $(window).resize(function() {

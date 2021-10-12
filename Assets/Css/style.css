@@ -7,7 +7,7 @@
 
 .max-width {
     max-width: 1300px;
-    padding: 0 60px;
+    padding: 0 40px;
     margin: auto;
 }
 
@@ -27,6 +27,7 @@
 .bg-black {
     background-color: black;
     color: white;
+    text-align: center;
 }
 
 .navbar_ai.sticky {
@@ -44,6 +45,7 @@
     color: white;
     font-size: 35px;
     font-weight: 600;
+    margin-left: 20px;
 }
 
 .navbar_ai .logo a {
@@ -78,7 +80,7 @@
     color: white;
     font-size: 18px;
     font-weight: 500;
-    margin-left: 20px;
+    margin-left: 15px;
     transition: color 0.3s ease;
 }
 
@@ -88,6 +90,7 @@
 
 .navbar_ai ul li a:hover {
     text-decoration: underline;
+    color: #2fb383 !important;
 }
 
 .navbar_ai.sticky .menu li a:hover {
@@ -100,6 +103,18 @@
     cursor: pointer;
     display: none;
 }
+
+.nav-link {
+    color: white !important;
+}
+
+
+/* .nav-link:hover {
+    background: -webkit-linear-gradient(#18a86b, #2fb383);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline;
+} */
 
 
 /* Navbar Css End */
@@ -212,7 +227,7 @@ section.About {
 }
 
 .ab-img {
-    width: 80%;
+    width: 100%;
 }
 
 
@@ -289,5 +304,36 @@ section.banquet {
     .navbar_ai .menu li a:hover,
     .navbar_ai.sticky .menu li a:hover {
         color: crimson;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .max-width {
+        padding: 0 20px !important;
+    }
+    .Line p {
+        width: 100%;
+    }
+    .navbar_ai .logo {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .navbar_ai {
+        position: relative;
+    }
+    .hero .container {
+        /* margin-top: 9rem; */
+    }
+    .Line {
+        padding: 2rem;
+    }
+    .box-main {
+        margin: 20px auto;
+        padding: 1.5rem;
+    }
+    .banquet .max-width .container {
+        padding: 0px !important;
     }
 }
