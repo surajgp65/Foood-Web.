@@ -236,9 +236,6 @@ section.About {
 
 /* Banquet Css */
 
-
-/* Banquet Css End */
-
 section.banquet {
     background-image: url(../img/pexels-anna-guerrero-1956974.jpg);
     background-repeat: no-repeat;
@@ -252,7 +249,7 @@ section.banquet {
     margin: 50px auto;
     color: white;
     background: #202127;
-    padding: 3rem 2rem;
+    padding: 3rem 3rem;
 }
 
 .Line {
@@ -265,6 +262,9 @@ section.banquet {
     min-width: 80px !important;
     margin: auto;
 }
+
+
+/* Banquet Css End */
 
 
 /* Media Query */

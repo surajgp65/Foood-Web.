@@ -32,3 +32,7 @@ jQuery(document).ready(function($) {
     //Fire it when the page first loads:
     alterClass();
 });
+
+$('.navbar-collapse a').click(function() {
+    $(".navbar-collapse").collapse('hide');
+});
