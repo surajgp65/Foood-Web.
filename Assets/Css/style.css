@@ -17,7 +17,7 @@
 .navbar_ai {
     position: fixed;
     width: 100%;
-    /* padding: 30px 0; */
+    padding: 25px 1.3rem;
     background: transparent;
     font-family: 'Ubuntu', 'sans-serif';
     transition: all ease .5s;
@@ -30,7 +30,7 @@
 }
 
 .navbar_ai.sticky {
-    padding: 10px 1.2rem;
+    padding: 10px 1.3rem;
     background: #000000cc;
 }
 
@@ -74,11 +74,11 @@
     display: inline-block;
 }
 
-.navbar_ai .menu li a {
+.navbar_ai ul li a {
     color: white;
     font-size: 18px;
     font-weight: 500;
-    margin-left: 25px;
+    margin-left: 20px;
     transition: color 0.3s ease;
 }
 
@@ -86,8 +86,8 @@
     color: white;
 }
 
-.navbar_ai .menu li a:hover {
-    /* color: crimson; */
+.navbar_ai ul li a:hover {
+    text-decoration: underline;
 }
 
 .navbar_ai.sticky .menu li a:hover {
