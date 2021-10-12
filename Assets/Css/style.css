@@ -17,15 +17,20 @@
 .navbar_ai {
     position: fixed;
     width: 100%;
-    padding: 30px 0;
+    /* padding: 30px 0; */
     background: transparent;
     font-family: 'Ubuntu', 'sans-serif';
     transition: all ease .5s;
     z-index: 999;
 }
 
+.bg-black {
+    background-color: black;
+    color: white;
+}
+
 .navbar_ai.sticky {
-    padding: 15px 0;
+    padding: 10px 1.2rem;
     background: #000000cc;
 }
 
@@ -43,6 +48,7 @@
 
 .navbar_ai .logo a {
     color: white;
+    transition: all 0.5s ease-in-out;
 }
 
 .navbar_ai .logo a span {
@@ -60,6 +66,7 @@
 
 .navbar_ai ul {
     margin-bottom: 0px;
+    padding: 10px;
 }
 
 .navbar_ai .menu li {
