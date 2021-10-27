@@ -168,6 +168,7 @@
     padding: 6px 25px;
     outline: none;
     box-shadow: none;
+    transition: all .3s ease-in-out;
 }
 
 .book:hover,
@@ -175,6 +176,12 @@
     color: white;
     background-color: black;
     border-color: black;
+}
+
+.book:hover .fa,
+.vm:hover .fa {
+    transition: all .3s ease-in-out;
+    transform: translateX(5px);
 }
 
 .book:focus,
@@ -228,6 +235,25 @@ section.About {
 
 .ab-img {
     width: 100%;
+}
+
+.divider {
+    position: relative;
+}
+
+.divider:before {
+    content: "";
+    position: absolute;
+    max-width: 171px;
+    width: 171px;
+    display: block;
+    height: 21px;
+    background: url(../img/Divider.png) no-repeat;
+    /* background-color: #18a86b; */
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 100%;
 }
 
 
